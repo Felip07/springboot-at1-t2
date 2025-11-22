@@ -21,10 +21,10 @@ jobs:
           java-version: '17'
 
       - name: Instalar dependências e rodar testes
-        run: mvn -B verify --file /at1t2/pom.xml
+        run: mvn -B verify --file pom.xml
 
       - name: Criar artefato JAR
-        run: mvn -B package --file /at1t2/pom.xml
+        run: mvn -B package --file pom.xml
 
       - name: Salvar artefato
         uses: actions/upload-artifact@v4
